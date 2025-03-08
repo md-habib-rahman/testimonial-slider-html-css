@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(1, 78, 78);
+  padding: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonial {
+  background-color: #d3d3d3;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 5px 5px 10px #c58bff;
+  width: 700px;
+  border-radius: 50px;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.detail p {
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+}
+
+.container {
+  overflow: hidden;
+  height: 400px;
+}
+
+.title {
+  color: #fff;
+  font-size: 48px;
+}
+
+.wrapper {
+  animation: scrollTestimonial 5s linear infinite;
+}
+
+@keyframes scrollTestimonial {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.wrapper:hover {
+  animation-play-state: paused;
+}
